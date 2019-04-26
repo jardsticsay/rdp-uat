@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../src/style/general.css"></style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+        <script src="../src/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <!-- <script src="../src/js/second_booth.js"></script> -->
+        <script type="text/javascript" src="../src/js/sign_in.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" id="third-booth">
+            <div class="row container">   
+                <div class="col-xs-12 booth-container">
+                    <div class="col-xs-12 first grid">
+                        <div class="col-xs-4">
+                            <img src="../src/images/booth-stamps/booth-1.svg" alt="" class="stamps booth1">
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="../src/images/booth-stamps/booth-1.svg" alt="" class="stamps booth2" hidden>
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="../src/images/booth-stamps/booth-2.svg" alt="" class="stamps booth3" hidden>
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 second grid">
+                        <div class="col-xs-6 left">
+                            <img src="../src/images/booth-stamps/booth-3.svg" alt="" class="stamps booth4 fourth-stamp" hidden>
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                        <div class="col-xs-6 right">
+                            <img src="../src/images/booth-stamps/booth-4.svg" alt="" class="stamps booth5 fifth-stamp" hidden>
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 third grid">
+                        <div class="col-xs-4">
+                            <img src="../src/images/booth-stamps/booth-6.svg" alt="" class="stamps booth6" hidden>
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house" hidden>                      
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="../src/images/booth-stamps/booth-5.svg" alt="" class="stamps booth7" hidden>
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="../src/images/booth-stamps/booth-8.svg" alt="" class="stamps booth8" hidden>
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house" hidden>
+                        </div>
+                    </div>   
+                    <div class="col-xs-12 fourth grid" hidden>
+                        <div class="col-xs-6 right">
+                            <img src="../src/images/booth-stamps/booth-9.svg" alt="" class="stamps booth9 fourth-stamp">
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                        <div class="col-xs-6 left">
+                            <img src="../src/images/booth-stamps/booth-9.svg" alt="" class="stamps booth10 fifth-stamp">
+                            <img src="../src/images/Booth.svg" alt="" class="booth-house">
+                        </div>
+                    </div>                   
+                
+                </div>
+            </div>
+            <div id="free-claim">
+                <div class="col-xs-12 on-your-way">
+                    <div class="will-claimed3">
+                        <div class="col-xs-12">
+                            <h4 id="check-min1">Booth 3 Visited</h4>
+                            <div class="col-xs-12">
+                                <div class="btn-claim">
+                                    <button class="btn-smart" id="booth3-btn">CLAIM STAMP</button>        
+                                    <a href="" ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="claimed3" hidden>
+                        <img class="check-mark" src="../src/images/check.svg" frameborder="0">
+                        <h3 id="congrats">You're on your way! <span id="ret-name"></span></h3>
+                        <p id="raffle">Visit anoter booth and</p>
+                        <p id="entry">scan QR code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

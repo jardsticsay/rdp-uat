@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../src/style/general.css"></style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+        <script src="../src/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="../src/js/second_booth.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" id="first-booth">
+            <div class="row header">
+                <h3>RetCon 2019</h3>
+            </div>
+            <div class="cotainer-map">
+                
+                <div class="row" id="progress-map">
+                    <div class="col-xs-12 stamp-container" hidden>
+                        <div class="col-xs-12 stamp-img img-1">
+                                <span class="stamp1" hidden>Booth One</span>
+                            <img src="../src/images/download.png" alt="">
+                        </div>
+                        <div class="col-xs-6 stamp-img img-5">
+                            <span class="stamp5" hidden>Booth Five</span>
+                            <img src="../src/images/download.png" alt="">
+                        </div>
+                        <div class="col-xs-6 stamp-img img-2">
+                                <span class="stamp2" hidden>Booth Two</span>
+                            <img src="../src/images/download.png" alt="">
+                        </div>
+                        <div class="col-xs-6 stamp-img img-4">
+                            <span class="stamp4" hidden>Booth Four</span>
+                            <img src="../src/images/download.png" alt="">
+                        </div>
+                        <div class="col-xs-6 stamp-img img-3">
+                                <span class="stamp3" hidden>Booth Three</span>
+                            <img src="../src/images/download.png" alt="">
+                        </div>                          
+                </div>
+                </div>
+            </div>
+            <div class="input-form">
+                <div class="row" id="action-form">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="idn-input">
+                        <label class="mdl-textfield__label" >ID Control Number</label>
+                    </div>
+                    <div class="row action-button">
+                        <button class="btn btn-primary" id="stamp">Claim Raffle Stamp</button>
+                        <button class="btn btn-primary check" id="check-prog">Cheeck Progress</button>
+                    </div>
+                    <div id="user-details">
+                        <p id="thanks"></p>
+                        <p id="fullname"> <span id="firstname"></span> <span id="lastname"></span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
