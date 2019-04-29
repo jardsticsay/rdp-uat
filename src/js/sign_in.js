@@ -162,7 +162,7 @@ $(function(){
     var loopExistingRecord = function(){
         $.each(existing, function(key, value){
             if(key == 'methodResponse'){
-                existingMobile = value.queryList[0].mobilenumber;
+                existingMobile = value.queryList[0].id_control_number;
                 console.log(existingMobile);
                 if( existingMobile === idnInput ){
                     alert("You're mobile number is already registered, you can now visit another booth");
@@ -879,7 +879,7 @@ $(function(){
         })
     }
 
-    var hours = 1; // Reset when storage is more than 24hours
+    var hours = 8; // Reset when storage is more than 8hours
     var now = new Date().getTime();
     var setupTime = localStorage.getItem('setupTime');
     if (setupTime == null) {

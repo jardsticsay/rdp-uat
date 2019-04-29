@@ -168,6 +168,30 @@ h1{
   position:absolute;
   top:-25px;
   left:2vw;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-delay:2.5s;
+  -webkit-animation-delay:2.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+}
+@-webkit-keyframes pulse{
+  0%{
+      opacity: 0;
+  }
+  10%{
+      opacity:.50;
+      transform-origin: 50% 50%;
+      transform: rotate(-2deg) scale(5);
+      transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100%{
+      opacity:1;
+      transform: rotate(6deg) scale(1);
+  }
 }
 #free-stamp{
   margin-top:10%;
